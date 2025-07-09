@@ -72,7 +72,7 @@ iOS приложение для отслеживания тренировок с
 ## 📸 Скриншоты основных экранов
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/204d4be9-5032-48ec-95d8-c50d4afa44fa" width="200" alt="Home Screen">
+  <img src="https://github.com/user-attachments/assets/d78a2a7e-e623-47f3-8c26-51944be0b895" width="200" alt="Home Screen">
 </p>
 
 ## 🎨 Дизайн

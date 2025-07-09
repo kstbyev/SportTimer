@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0452B65A2E1EE6CD0033E468 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452B6592E1EE6CC0033E468 /* Animations.swift */; };
+		0452B65D2E1EE7BB0033E468 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452B65B2E1EE7BB0033E468 /* SoundManager.swift */; };
+		0452B65E2E1EE7BB0033E468 /* BackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452B65C2E1EE7BB0033E468 /* BackgroundTaskManager.swift */; };
 		04F913AD2E1E3E74006C301D /* SportTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913AC2E1E3E74006C301D /* SportTimeApp.swift */; };
 		04F913AF2E1E3E74006C301D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913AE2E1E3E74006C301D /* Persistence.swift */; };
 		04F913B22E1E3E74006C301D /* SportTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F913B02E1E3E74006C301D /* SportTime.xcdatamodeld */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		0452B6592E1EE6CC0033E468 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		0452B65B2E1EE7BB0033E468 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		0452B65C2E1EE7BB0033E468 /* BackgroundTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTaskManager.swift; sourceTree = "<group>"; };
 		04F913A92E1E3E74006C301D /* SportTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F913AC2E1E3E74006C301D /* SportTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimeApp.swift; sourceTree = "<group>"; };
 		04F913AE2E1E3E74006C301D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		04F913AB2E1E3E74006C301D /* SportTime */ = {
 			isa = PBXGroup;
 			children = (
+				0452B65C2E1EE7BB0033E468 /* BackgroundTaskManager.swift */,
+				0452B65B2E1EE7BB0033E468 /* SoundManager.swift */,
 				0452B6592E1EE6CC0033E468 /* Animations.swift */,
 				04F913D62E1E6A93006C301D /* ImagePicker.swift */,
 				04F913D72E1E6A93006C301D /* UserProfile.swift */,
@@ -185,11 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F913D82E1E6A93006C301D /* ImagePicker.swift in Sources */,
+				0452B65D2E1EE7BB0033E468 /* SoundManager.swift in Sources */,
 				04F913AD2E1E3E74006C301D /* SportTimeApp.swift in Sources */,
 				04F913D92E1E6A93006C301D /* UserProfile.swift in Sources */,
 				04F913D22E1E3FF8006C301D /* WorkoutViewModel.swift in Sources */,
 				04F913D32E1E3FF8006C301D /* ProfileView.swift in Sources */,
 				04F913AF2E1E3E74006C301D /* Persistence.swift in Sources */,
+				0452B65E2E1EE7BB0033E468 /* BackgroundTaskManager.swift in Sources */,
 				04F913CD2E1E3FF8006C301D /* HistoryView.swift in Sources */,
 				04F913D42E1E3FF8006C301D /* HomeView.swift in Sources */,
 				04F913CC2E1E3FF8006C301D /* TimerView.swift in Sources */,

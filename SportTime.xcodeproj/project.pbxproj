@@ -10,9 +10,20 @@
 		04F913AD2E1E3E74006C301D /* SportTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913AC2E1E3E74006C301D /* SportTimeApp.swift */; };
 		04F913AF2E1E3E74006C301D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913AE2E1E3E74006C301D /* Persistence.swift */; };
 		04F913B22E1E3E74006C301D /* SportTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F913B02E1E3E74006C301D /* SportTime.xcdatamodeld */; };
-		04F913B42E1E3E74006C301D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913B32E1E3E74006C301D /* ContentView.swift */; };
 		04F913B62E1E3E77006C301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F913B52E1E3E77006C301D /* Assets.xcassets */; };
 		04F913BA2E1E3E77006C301D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F913B92E1E3E77006C301D /* Preview Assets.xcassets */; };
+		04F913CC2E1E3FF8006C301D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C12E1E3FF8006C301D /* TimerView.swift */; };
+		04F913CD2E1E3FF8006C301D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C22E1E3FF8006C301D /* HistoryView.swift */; };
+		04F913CE2E1E3FF8006C301D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C32E1E3FF8006C301D /* TimerViewModel.swift */; };
+		04F913CF2E1E3FF8006C301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F913C42E1E3FF8006C301D /* Assets.xcassets */; };
+		04F913D02E1E3FF8006C301D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C52E1E3FF8006C301D /* Models.swift */; };
+		04F913D12E1E3FF8006C301D /* SportTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C62E1E3FF8006C301D /* SportTime.xcdatamodeld */; };
+		04F913D22E1E3FF8006C301D /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C82E1E3FF8006C301D /* WorkoutViewModel.swift */; };
+		04F913D32E1E3FF8006C301D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913C92E1E3FF8006C301D /* ProfileView.swift */; };
+		04F913D42E1E3FF8006C301D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913CA2E1E3FF8006C301D /* HomeView.swift */; };
+		04F913D52E1E3FF8006C301D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913CB2E1E3FF8006C301D /* MainTabView.swift */; };
+		04F913D82E1E6A93006C301D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913D62E1E6A93006C301D /* ImagePicker.swift */; };
+		04F913D92E1E6A93006C301D /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F913D72E1E6A93006C301D /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +31,22 @@
 		04F913AC2E1E3E74006C301D /* SportTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimeApp.swift; sourceTree = "<group>"; };
 		04F913AE2E1E3E74006C301D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		04F913B12E1E3E74006C301D /* SportTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportTime.xcdatamodel; sourceTree = "<group>"; };
-		04F913B32E1E3E74006C301D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04F913B52E1E3E77006C301D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F913B72E1E3E77006C301D /* SportTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SportTime.entitlements; sourceTree = "<group>"; };
 		04F913B92E1E3E77006C301D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04F913BB2E1E3E77006C301D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F913C12E1E3FF8006C301D /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		04F913C22E1E3FF8006C301D /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		04F913C32E1E3FF8006C301D /* TimerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		04F913C42E1E3FF8006C301D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F913C52E1E3FF8006C301D /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		04F913C72E1E3FF8006C301D /* SportTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportTime.xcdatamodel; sourceTree = "<group>"; };
+		04F913C82E1E3FF8006C301D /* WorkoutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		04F913C92E1E3FF8006C301D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		04F913CA2E1E3FF8006C301D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		04F913CB2E1E3FF8006C301D /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		04F913D62E1E6A93006C301D /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		04F913D72E1E6A93006C301D /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +79,20 @@
 		04F913AB2E1E3E74006C301D /* SportTime */ = {
 			isa = PBXGroup;
 			children = (
+				04F913D62E1E6A93006C301D /* ImagePicker.swift */,
+				04F913D72E1E6A93006C301D /* UserProfile.swift */,
+				04F913C42E1E3FF8006C301D /* Assets.xcassets */,
+				04F913C22E1E3FF8006C301D /* HistoryView.swift */,
+				04F913CA2E1E3FF8006C301D /* HomeView.swift */,
+				04F913CB2E1E3FF8006C301D /* MainTabView.swift */,
+				04F913C52E1E3FF8006C301D /* Models.swift */,
+				04F913C92E1E3FF8006C301D /* ProfileView.swift */,
+				04F913C62E1E3FF8006C301D /* SportTime.xcdatamodeld */,
+				04F913C12E1E3FF8006C301D /* TimerView.swift */,
+				04F913C32E1E3FF8006C301D /* TimerViewModel.swift */,
+				04F913C82E1E3FF8006C301D /* WorkoutViewModel.swift */,
 				04F913AC2E1E3E74006C301D /* SportTimeApp.swift */,
 				04F913AE2E1E3E74006C301D /* Persistence.swift */,
-				04F913B32E1E3E74006C301D /* ContentView.swift */,
 				04F913B52E1E3E77006C301D /* Assets.xcassets */,
 				04F913B72E1E3E77006C301D /* SportTime.entitlements */,
 				04F913BB2E1E3E77006C301D /* Info.plist */,
@@ -136,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F913BA2E1E3E77006C301D /* Preview Assets.xcassets in Resources */,
+				04F913CF2E1E3FF8006C301D /* Assets.xcassets in Resources */,
 				04F913B62E1E3E77006C301D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,10 +181,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F913D82E1E6A93006C301D /* ImagePicker.swift in Sources */,
 				04F913AD2E1E3E74006C301D /* SportTimeApp.swift in Sources */,
+				04F913D92E1E6A93006C301D /* UserProfile.swift in Sources */,
+				04F913D22E1E3FF8006C301D /* WorkoutViewModel.swift in Sources */,
+				04F913D32E1E3FF8006C301D /* ProfileView.swift in Sources */,
 				04F913AF2E1E3E74006C301D /* Persistence.swift in Sources */,
-				04F913B42E1E3E74006C301D /* ContentView.swift in Sources */,
+				04F913CD2E1E3FF8006C301D /* HistoryView.swift in Sources */,
+				04F913D42E1E3FF8006C301D /* HomeView.swift in Sources */,
+				04F913CC2E1E3FF8006C301D /* TimerView.swift in Sources */,
+				04F913CE2E1E3FF8006C301D /* TimerViewModel.swift in Sources */,
+				04F913D12E1E3FF8006C301D /* SportTime.xcdatamodeld in Sources */,
 				04F913B22E1E3E74006C301D /* SportTime.xcdatamodeld in Sources */,
+				04F913D02E1E3FF8006C301D /* Models.swift in Sources */,
+				04F913D52E1E3FF8006C301D /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +423,16 @@
 				04F913B12E1E3E74006C301D /* SportTime.xcdatamodel */,
 			);
 			currentVersion = 04F913B12E1E3E74006C301D /* SportTime.xcdatamodel */;
+			path = SportTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		04F913C62E1E3FF8006C301D /* SportTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04F913C72E1E3FF8006C301D /* SportTime.xcdatamodel */,
+			);
+			currentVersion = 04F913C72E1E3FF8006C301D /* SportTime.xcdatamodel */;
 			path = SportTime.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

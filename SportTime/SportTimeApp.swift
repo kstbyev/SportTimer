@@ -13,8 +13,7 @@ struct SportTimeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainTabView(context: persistenceController.container.viewContext)
         }
     }
 }

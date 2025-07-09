@@ -6,5 +6,9 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Приложению нужен доступ к галерее для выбора аватара пользователя</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Приложению нужен доступ к камере для создания фото аватара</string>
 </dict>
 </plist>

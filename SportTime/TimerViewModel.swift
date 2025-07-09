@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Combine
+import AVFoundation
 
 @MainActor
 class TimerViewModel: ObservableObject {
@@ -66,6 +67,7 @@ class TimerViewModel: ObservableObject {
     func completeWorkout() {
         timerState = .completed
         stopTimerUpdates()
+        SoundManager.shared.playWorkoutCompleteSound()
     }
     
     private func startTimerUpdates() {
@@ -87,6 +89,11 @@ class TimerViewModel: ObservableObject {
         
         let currentTime = Date()
         elapsedTime = Int(currentTime.timeIntervalSince(startTime)) + pausedTime
+        
+        // Play sound every minute
+        if elapsedTime % 60 == 0 && elapsedTime > 0 {
+            SoundManager.shared.playIntervalSound()
+        }
     }
     
     func saveWorkout() {

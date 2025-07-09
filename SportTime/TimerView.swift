@@ -197,6 +197,7 @@ struct TimerView: View {
     private var startButton: some View {
         Button(action: {
             withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                BackgroundTaskManager.shared.startBackgroundTask()
                 timerViewModel.startTimer()
             }
         }) {
@@ -303,6 +304,7 @@ struct TimerView: View {
                 duration: Int32(timerViewModel.elapsedTime),
                 notes: timerViewModel.notes.isEmpty ? nil : timerViewModel.notes
             )
+            BackgroundTaskManager.shared.endBackgroundTask()
             isSaving = false
             dismiss()
         }

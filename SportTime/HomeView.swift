@@ -99,9 +99,7 @@ struct HomeView: View {
     private var recentWorkoutsSection: some View {
         VStack(alignment: .leading, spacing: AppConstants.smallPadding) {
             Text("Последние тренировки")
-                .font(.system(size: 20, weightz
-                    
-                    efjb.semibold))
+                .font(.system(size: 20, weight: .semibold))
                 .foregroundColor(AppColors.textPrimary)
             
             if workoutViewModel.workouts.isEmpty {

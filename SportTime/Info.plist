@@ -5,6 +5,12 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
+		<string>background-processing</string>
+		<string>background-fetch</string>
+	</array>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.sporttimer.refresh</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Приложению нужен доступ к галерее для выбора аватара пользователя</string>

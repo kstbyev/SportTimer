@@ -13,6 +13,7 @@ struct TimerView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showingSaveAlert = false
     @State private var showingDiscardAlert = false
+    @State private var isSaving = false
     
     var body: some View {
         NavigationView {
@@ -75,6 +76,19 @@ struct TimerView: View {
         } message: {
             Text("Вся информация о тренировке будет потеряна")
         }
+        .overlay(
+            Group {
+                if isSaving {
+                    Color.black.opacity(0.3)
+                        .ignoresSafeArea()
+                    
+                    LoadingView()
+                        .background(Color.white)
+                        .cornerRadius(AppConstants.cornerRadius)
+                        .shadow(color: Color.black.opacity(0.3), radius: 10)
+                }
+            }
+        )
     }
     
     private var timerDisplay: some View {
@@ -280,12 +294,18 @@ struct TimerView: View {
     }
     
     private func saveWorkout() {
-        workoutViewModel.saveWorkout(
-            type: timerViewModel.selectedWorkoutType.rawValue,
-            duration: Int32(timerViewModel.elapsedTime),
-            notes: timerViewModel.notes.isEmpty ? nil : timerViewModel.notes
-        )
-        dismiss()
+        isSaving = true
+        
+        // Имитация задержки сохранения
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            workoutViewModel.saveWorkout(
+                type: timerViewModel.selectedWorkoutType.rawValue,
+                duration: Int32(timerViewModel.elapsedTime),
+                notes: timerViewModel.notes.isEmpty ? nil : timerViewModel.notes
+            )
+            isSaving = false
+            dismiss()
+        }
     }
 }
 

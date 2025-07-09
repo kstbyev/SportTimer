@@ -99,15 +99,20 @@ struct HomeView: View {
     private var recentWorkoutsSection: some View {
         VStack(alignment: .leading, spacing: AppConstants.smallPadding) {
             Text("Последние тренировки")
-                .font(.system(size: 20, weight: .semibold))
+                .font(.system(size: 20, weightz
+                    
+                    efjb.semibold))
                 .foregroundColor(AppColors.textPrimary)
             
             if workoutViewModel.workouts.isEmpty {
                 emptyWorkoutsView
             } else {
                 LazyVStack(spacing: AppConstants.smallPadding) {
-                    ForEach(workoutViewModel.getRecentWorkouts(), id: \.id) { workout in
-                        WorkoutCard(workout: workout)
+                    ForEach(Array(workoutViewModel.getRecentWorkouts().enumerated()), id: \.element.id) { index, workout in
+                        AnimatedCardView {
+                            WorkoutCard(workout: workout)
+                        }
+                        .animation(Animations.cardAppear.delay(Double(index) * 0.1), value: workoutViewModel.workouts.count)
                     }
                 }
             }
@@ -233,7 +238,7 @@ struct ScaleButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
+            .animation(Animations.buttonPress, value: configuration.isPressed)
     }
 }
 

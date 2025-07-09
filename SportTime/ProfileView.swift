@@ -191,33 +191,22 @@ struct ProfileView: View {
                 GridItem(.flexible()),
                 GridItem(.flexible())
             ], spacing: AppConstants.smallPadding) {
-                StatisticCard(
-                    title: "Всего тренировок",
-                    value: "\(workoutViewModel.getTotalWorkoutCount())",
-                    icon: "figure.run",
-                    color: AppColors.primary
-                )
-                
-                StatisticCard(
-                    title: "Общее время",
-                    value: TimeFormatter.formatTime(workoutViewModel.getTotalWorkoutTime()),
-                    icon: "clock.fill",
-                    color: AppColors.success
-                )
-                
-                StatisticCard(
-                    title: "Средняя длительность",
-                    value: averageWorkoutTime,
-                    icon: "timer",
-                    color: AppColors.secondary
-                )
-                
-                StatisticCard(
-                    title: "Любимый тип",
-                    value: favoriteWorkoutType,
-                    icon: "heart.fill",
-                    color: AppColors.warning
-                )
+                ForEach(Array([
+                    ("Всего тренировок", "\(workoutViewModel.getTotalWorkoutCount())", "figure.run", AppColors.primary),
+                    ("Общее время", TimeFormatter.formatTime(workoutViewModel.getTotalWorkoutTime()), "clock.fill", AppColors.success),
+                    ("Средняя длительность", averageWorkoutTime, "timer", AppColors.secondary),
+                    ("Любимый тип", favoriteWorkoutType, "heart.fill", AppColors.warning)
+                ].enumerated()), id: \.offset) { index, card in
+                    AnimatedCardView {
+                        StatisticCard(
+                            title: card.0,
+                            value: card.1,
+                            icon: card.2,
+                            color: card.3
+                        )
+                    }
+                    .animation(Animations.cardAppear.delay(Double(index) * 0.1), value: workoutViewModel.workouts.count)
+                }
             }
         }
     }

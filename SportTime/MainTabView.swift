@@ -23,26 +23,31 @@ struct MainTabView: View {
                     Image(systemName: "house.fill")
                     Text("Главная")
                 }
+                .transition(Animations.slideTransition)
             
             TimerView(workoutViewModel: workoutViewModel)
                 .tabItem {
                     Image(systemName: "timer")
                     Text("Таймер")
                 }
+                .transition(Animations.slideTransition)
             
             HistoryView(workoutViewModel: workoutViewModel)
                 .tabItem {
                     Image(systemName: "clock.arrow.circlepath")
                     Text("История")
                 }
+                .transition(Animations.slideTransition)
             
             ProfileView(workoutViewModel: workoutViewModel, userProfile: userProfile)
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Профиль")
                 }
+                .transition(Animations.slideTransition)
         }
         .accentColor(AppColors.primary)
+        .animation(Animations.cardAppear, value: workoutViewModel.workouts.count)
     }
 }
 

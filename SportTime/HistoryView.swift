@@ -85,15 +85,18 @@ struct HistoryView: View {
                 emptyStateView
             } else {
                 List {
-                    ForEach(groupedWorkouts.keys.sorted(by: >), id: \.self) { date in
-                        Section(header: dateHeader(for: date)) {
-                            ForEach(groupedWorkouts[date] ?? [], id: \.id) { workout in
-                                WorkoutHistoryRow(workout: workout) {
-                                    deleteWorkout(workout)
+                                            ForEach(groupedWorkouts.keys.sorted(by: >), id: \.self) { date in
+                            Section(header: dateHeader(for: date)) {
+                                ForEach(Array((groupedWorkouts[date] ?? []).enumerated()), id: \.element.id) { index, workout in
+                                    AnimatedCardView {
+                                        WorkoutHistoryRow(workout: workout) {
+                                            deleteWorkout(workout)
+                                        }
+                                    }
+                                    .animation(Animations.cardAppear.delay(Double(index) * 0.05), value: workoutViewModel.workouts.count)
                                 }
                             }
                         }
-                    }
                 }
                 .listStyle(InsetGroupedListStyle())
             }
